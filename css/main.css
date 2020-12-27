@@ -1,5 +1,8 @@
 .jumbotron {
-    background-color: yellow;
+	background-color: yellow;
+	color: black;
+	margin-top: 50px;
+	
 }
 
 footer{
