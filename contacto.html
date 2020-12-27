@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <title>Guia Hoteles</title>
+  </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#">Hoteles</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./precios.html">Precios</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="./contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+       <div class="jumbotron">
+          <h1>Hoteles</h1>
+       </div>
+       <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+          </ol>
+        </nav>
+        <h1>Dejame tu comentario</h1>
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre"
+                        placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido"
+                        placeholder="Ingrese su apellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email"
+                    placeholder="Ingrese su email">
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-9">
+                        <label for="domicilio">Domicilio</label>
+                        <input type="text" class="form-control" id="domicilio"
+                        placeholder="Ingrese su domicilio">
+                    </div>
+                    <div class="form-group col-sm-3">
+                        <label for="provincia">Provincia</label>
+                        <select name="provincia" id="provincia" class="form-control">
+                            <option value="1" selected>Capital Federal</option>
+                            <option value="2">Buenos Aires</option>
+                            <option value="3">Córdoba</option>
+                            <option value="4">Santa Fe</option>
+                            <option value="5">Mendoza</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentrio" id="comentario" cols="30" rows="10"
+                    class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="form-check">
+                        <input type="checkbox" id="gridCheck" class="form-check-input">
+                        <label for="gridCheck" class="form-check-label">
+                        Quiero que me contacten</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-pimary">Enviar</button>
+            </form>
+        </div>
+        
+        <footer>
+            <div class="row foooter_mysite">
+                <div class="col-sm-4 d-flex flex-column">
+                    <a href="http://www.facebook.com">Facebook</a>
+                    <a href="http://www.twitter.com">Twitter</a>
+                    <a href="http://www.instagram.com">Instagram</a>
+                </div>
+                <div class="col-sm-4 d-flex flex-column">
+                  <addrres>
+                    <h3>Oficina Central</h3>
+                    <p><span class="oi oi-home footer-address-icon"></span>Tucuman 834, CABA, Argentina</p>
+                    <p><span class="oi oi-phone footer-address-icon"></span>
+                       +59471254562</p>
+                    <p><span class="oi oi-inbox footer-address-icon"></span>contacto@hoteles.com</p>
+                   </addrres>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="./about.html">Nosotros</a>
+                    <a href="./precios.html">Precios</a>
+                    <a href="./contacto.html">Contacto</a>
+                </div>
+            </div>
+        </footer>
+
+        
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
