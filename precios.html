@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
 
+    
     <title>Guia Hoteles</title>
   </head>
     <body>
@@ -38,62 +39,130 @@
           </ol>
         </nav>
         
-        <div class="table-responsive">
-          <table class="table table-striped">
-            <thead class="thead-dark">
-              <th>Calidad</th>
-              <th>Buenos Aires</th>
-              <th>Mar del Plata</th>
-              <th>Bariloche</th>
-              <th>Salta</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="oi oi-star"></span>
-                </td>
-                <td>$1000</td>
-                <td>$2000</td>
-                <td>$2300</td>
-                <td>$2340</td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                </td>
-                <td>$2100</td>
-                <td>$2340</td>
-                <td>$2700</td>
-                <td>$2380</td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                  <span class="oi oi-star"></span>
-                </td>
-                <td>$3000</td>
-                <td>$3410</td>
-                <td>$3450</td>
-                <td>$3980</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header">
-              Tarjetas de crédito aceptadas
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="compara-tab" data-toggle="tab" href="#compara" role="tab" aria-controls="compara" aria-selected="true">Compara</a></li>
+          <li class="nav-item">
+            <a class="nav-link" id="tarjetas-tab" data-toggle="tab" href="#tarjetas" role="tab" aria-controls="tarjetas" aria-selected="false">Tarjetas</a></li>
+          <li class="nav-item">
+            <a class="nav-link" id="comentarios-tab" data-toggle="tab" href="#comentarios" role="tab" aria-controls="comentarios" aria-selected="false">Comentarios</a></li>
+        </ul>
+    
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="compara" role="tabpanel" aria-labelledby="compara-tab">
+    
+            <div class="table-responsive">
+              <div class="container">
+                <table class="table table-striped">
+                  <thead class="thead-dark">
+                    <th>Calidad</th>
+                    <th>Pinamar</th>
+                    <th>Mar del Plata</th>
+                    <th>San Clemente</th>
+                    <th>Santa Teresita</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="oi oi-star"></span></td>
+                      <td>$100</td>
+                      <td>$120</td>
+                      <td>$150</td>
+                      <td>$180</td>
+                    </tr>
+                    <tr>
+                      <td><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                      <td>$1.000</td>
+                      <td>$1.200</td>
+                      <td>$1.500</td>
+                      <td>$1.800</td>
+                    </tr>
+                    <tr>
+                      <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                      <td>$10.000</td>
+                      <td>$12.000</td>
+                      <td>$15.000</td>
+                      <td>$18.000</td>
+                    </tr>
+                    <tr>
+                      <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                      <td>$100.000</td>
+                      <td>$120.000</td>
+                      <td>$150.000</td>
+                      <td>$180.000</td>
+                    </tr>
+                    <tr>
+                      <td><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span><span class="oi oi-star"></span></td>
+                      <td>$300.000</td>
+                      <td>$320.000</td>
+                      <td>$350.000</td>
+                      <td>$380.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">Tarjeta básica, hasta 3 coutas</li>
-              <li class="list-group-item">Tarjeta Platinium, hasta 6 coutas sin interes!</li>
-              <li class="list-group-item">Tarjeta Black, hasta 12 coutas sin interes!</li>
-            </ul>
+    
+          </div>  
+    
+          <div class="tab-pane fade" id="tarjetas" role="tabpanel" aria-labelledby="tarjetas-tab">
+    
+            <div class="accordion" id="accordionTarjetas">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseBasica" aria-expanded="true" aria-controls="collapseBasica">
+                      Tarjeta Básica
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseBasica" class="collapse" aria-labelledby="headingOne" data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Reserva en 3 cuotas sin interes!
+                  </div>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collpsed" type="button" data-toggle="collapse" data-target="#collapseVIP" aria-expanded="false" aria-controls="collapseVIP">
+                      Tarjeta VIP
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseVIP" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Reserva en 6 cuotas sin interes!
+                  </div>
+                </div>
+              </div>
+    
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBlack" aria-expanded="false" aria-controls="collapseBlack">
+                      Tarjeta Black
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseBlack" class="collapse" aria-labelledby="headingThree" data-parent="#accordionTarjetas">
+                  <div class="card-body">
+                    Reserva en 12 cuotas sin interes! 
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+            
           </div>
+    
+          <div class="tab-pane fade" id="comentarios" role="tabpanel" aria-labelledby="comentarios-tab">
+    
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea vel velit recusandae iure voluptate fugiat ex dolor? Voluptatum possimus perspiciatis odio odit dolorem esse blanditiis, impedit sunt fugit exercitationem cupiditate!</p>
+    
+          </div>
+        
         </div>
-      </div>
 
     <footer>
         <div class="row">
@@ -122,8 +191,13 @@
       </footer>
   
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+        <!-- Jquery, popper.js y bootstrap Js -->
+     <!-- build:js js/main.js -->
+     <script src="node_modules/Jquery/dist/jquery.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <!-- endbuild -->   
 
   </body>
 </html>
