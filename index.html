@@ -107,7 +107,7 @@
                 
                 <div class="card-body">
                     
-                    <h5 class="card-title">Hotel Buenos Aires</h5>
+                    <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras reservas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5>
                     <h6 class="card-subtitle text-muted">Argentina</h6>
                     <p class="card-text">Hotel ubicado en pleno centro.</p>
                 </div>
@@ -160,7 +160,7 @@
                     <p class="card-text">Hotel ubicado en pleno centro.</p>
                 </div>
                 <div>
-                    <button class="btn btn-primary btn-reserva"> Reservar</button>
+                    <button class="btn btn-primary btn-reserva" data-toggle="popover" title="Promociones" data-content="Consultá las promociones vigentes"> Reservar</button>
                 </div>
             </div>
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
@@ -246,6 +246,12 @@
      <script src="node_modules/Jquery/dist/jquery.min.js"></script>
      <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
      <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script>
+         $(function(){
+             $("[data-toggle='tooltip']").tooltip();
+             $("[data-toggle='popover']").popover();
+         });
+     </script>
      <!-- endbuild -->
 
   </body>
