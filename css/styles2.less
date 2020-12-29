@@ -1,0 +1,32 @@
+@amarillo: #f0db1d;
+
+.margenes (@top: 0px, @bottom: 0px){
+    margin-top: @top;
+    margin-bottom: @bottom; }
+     
+
+.jumbotron {
+    background-color: @amarillo;
+    color: black;
+    .margenes (50px, 0px); }
+  
+  .card-hotel {
+    flex: 1 200px;
+    height: 100%;
+    .margenes (10px, 0px); }
+  
+  .btn-reserva {
+    width: 100%;
+    left: 0px;
+    bottom: 0px; }
+  
+  footer {
+    background-color: @amarillo;
+    padding: 10px 10px 0px 10px;
+    .margenes (10px, 0px); }
+  
+  .footer-icon {
+    padding-right: 10px; }
+  
+  .tab-content {
+    padding-top: 10px; }
