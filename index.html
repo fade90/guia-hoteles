@@ -193,7 +193,7 @@
                     <h5 class="card-title">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro.</p>
-                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto" id="contactoBtn">Contacto</button>
                 </div>
                 <div>
                 <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -275,7 +275,32 @@
              $("[data-toggle='popover']").popover();
              $('.carousel').carousel({
                 interval: 2000
-             });    
+              });
+
+             $("#contacto").on("show.bs.modal", function (e){
+               console.log("El modal contacto se está mostrando");
+               
+
+             $('#contactoBtn').removeClass('btn-outline-success');
+             $('#contactoBtn').addClass('btn-primary');
+             $('#contactoBtn').prop('disabled', true);
+
+              });
+
+             $('#contacto').on('shown.bs.modal', function (e){
+                console.log('El modal contacto se mostró')
+              });
+
+             $('#contacto').on('hide.bs.modal', function (e){
+                console.log('El modal contacto se está ocultando')
+              });
+
+             $('#contacto').on('hidden.bs.modal', function (e){
+                console.log('El modal contacto se ocultó')
+
+                $('#contactoBtn').prop('disabled', true);
+              });
+
          });
      </script>
      <!-- endbuild -->
