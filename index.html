@@ -14,6 +14,9 @@
     <title>Guia Hoteles</title>
   </head>
     <body>
+
+        <!--BARRA DE NAVEGACION-->
+
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#">Hoteles</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="toggle navigation">
@@ -29,16 +32,24 @@
             </div>
         </nav>
 
+        <!--JUMBOTRON-->
+
        <div class="jumbotron">
           <h1>Hoteles</h1>
        </div>
+
+       <!--BREADCRUMBL-->
+
        <div class="container">
-        <nav aria-label="breadcrumb">
+         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">Home</li>
           </ol>
-        </nav>
-           
+         </nav>
+       </div>
+         
+        <!--ARTICULOS-->
+
         <div class="container">
             <div class="row">
               <div class="col-sm-4">
@@ -75,6 +86,8 @@
         <hr>
 
         <img src="images/playa1.jpg" class="img-fluid" alt="Responsive IMG">
+
+        <!--TARJETAS-->
 
         <div class="d-flex flex-wrap">
             <div class="card card-hotel d-flex flex-column justify-content-between mr-2">
@@ -157,6 +170,7 @@
                     <h5 class="card-title">Hotel San Pablo</h5>
                     <h6 class="card-subtitle text-muted">Brasil</h6>
                     <p class="card-text">Hotel ubicado en pleno centro.</p>
+                    <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">Contacto</button>
                 </div>
                 <div>
                 <button class="btn btn-primary btn-reserva"> Reservar</button>
@@ -164,6 +178,42 @@
             </div>
         </div>	
     </div>
+
+
+    <!--MODAL-->
+    
+    <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+    
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Tu email:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="form-group">
+                  <label for="message-text" class="col-form-label">Mensaje:</label>
+                  <textarea class="form-control" id="message-text"></textarea>
+                </div>
+              </form>
+            </div>
+    
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <!--FOOTER-->
 
     <footer>
         <div class="row">
